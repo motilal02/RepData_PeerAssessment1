@@ -41,6 +41,7 @@ names(data_asis)
 ```
 ## [1] "steps"    "date"     "interval"
 ```
+
 2. Process/transform the data into a format suitable for your analysis
 
 ```r
@@ -57,6 +58,7 @@ activity_data <- na.omit(data_asis)
 ```r
 aggtot <- aggregate(steps ~ date, activity_data, sum)
 ```
+
 2. Make a histogram of the total number of steps taken each day
 
 ```r
